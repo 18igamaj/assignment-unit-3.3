@@ -33,7 +33,18 @@ console.log('Added new number 25 to:', supplyChanges );
 //    - if the value is 0, log 'No Change.'
 //    - if the value is negative, format the log as 'Removed x parts.' 
 console.log('6. Showing supplyChanges...');
-
+for(i=0; i<supplyChanges.length; i++){
+    console.log('for loop of Supply:', supplyChanges[i]);
+    if(supplyChanges[i] === 0 ){
+        console.log('No Change');
+    }
+    else if(supplyChanges[i] > 0){
+        console.log('Added x parts');
+    }
+else(supplyChanges[i] < 0){
+    console.log('Removed x parts');
+}
+}
 
 // STRETCH GOALS
 console.log('---  Stretch Goals  ---');
